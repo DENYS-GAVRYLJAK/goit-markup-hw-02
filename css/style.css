@@ -16,12 +16,16 @@
   --background-color: #2F303A;
   
 }
- {
+ body{
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: black;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+
   
 }
+
+.title {}
 
 .logo {
   font-family:  "Raleway", sans-serif;
@@ -39,7 +43,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: var(--title-text-color#212121);
+  color: var(--title-text-color);
 }
 
 .main-menu{
@@ -47,23 +51,42 @@
   font-family: "Roboto", sans-serif;
 }
 
+.navigation-link {
+
+  color: var(--title-text-color);
+}
+.navigation-link:hover,
+.navigation-link:focus,
+.button:hover,
+.button:focus,
+.contacts .link:hover,
+.contacts .link:focus  {
+
+  color: var(--accent-color);
+}
+
+
+.contacts .link {
+  color:var(--primary-text-color);
+}
+
 .works-name {
  font-size: 18px;
 }
 .work-type {
   font-size: 16px;
-  color: var(--primary-text-color#757575);
+  color: var(--primary-text-color);
 }
 
 footer {
-  background-color: var(--primary-text-color#757575);
+  background-color: var(--background-color);
 }
 
 footer .logo {
-  color: var(--primary-white-color #ffffff);
+  color: white;
 }
 .adress {
-  color: var(--primary-white-color #ffffff);
+  color: var(--primary-white-color);
 }
 
 .mail-phone {
@@ -72,20 +95,23 @@ footer .logo {
 
 .join {
 
-  color: var(--primary-white-color #ffffff);
+  color: var(--primary-white-color );
 }
 
 .subscribe {
-  color: var(--primary-white-color #ffffff);
+  color: var(--primary-white-color );
 }
 
 .bullet-points {
 font-weight: bold;
+color: var(--title-text-color);
+
 
 }
-.heading{
+.title{
 font-size: 36px;
 font-weight: bold;
+color: var(--title-text-color);
 }
 
 .description {
@@ -95,15 +121,26 @@ font-weight: bold;
 
 .what-we-do {
   font-weight: bold;
-  color: var(--primary-white-color #ffffff);
+  color: var(--primary-white-color);
 }
 .name {
 
   font-size: 16px;
   font-weight: medium;
+  color: var(--title-text-color);
 }
 .profession {
 
   font-size: 16px;
   
+}
+
+.works-name {
+  color: var(--title-text-color);
+}
+
+.button {
+
+  font-size: 16px;
+  color:var(--title-text-color);
 }
